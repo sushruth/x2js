@@ -16,13 +16,14 @@
  */
 
 (function (root, factory) {
-     if (typeof define === "function" && define.amd) {
-         define([], factory);
-     } else if (typeof exports === "object") {
-         module.exports = factory();
-     } else {
+	// Sastry: 2017-10-13 - making this 'browser only'.
+    //  if (typeof define === "function" && define.amd) {
+    //      define([], factory);
+    //  } else if (typeof exports === "object") {
+    //      module.exports = factory();
+    //  } else {
          root.X2JS = factory();
-     }
+    //  }
  }(this, function () {
 	return function (config) {
 		'use strict';
